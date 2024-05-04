@@ -37,6 +37,12 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.UseOutputCache();
 
-app.MapControllers();
+
+app.MapGet("/hackernews/{n:int}", async (int n, IHackerNewsService hackerNewsService) =>
+{
+    var items = await hackerNewsService.GetTopItemsAsync(n);
+    return Results.Ok(items);
+})
+.CacheOutput(policyName: Policies.HackerNewsApiPolicy);
 
 app.Run();

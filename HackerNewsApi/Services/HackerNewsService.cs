@@ -7,7 +7,7 @@ namespace HackerNewsApi.Services;
 
 internal class HackerNewsService : IHackerNewsService
 {
-    private static readonly string BaseUrl = "https://hacker-news.firebaseio.com/v0";
+    private const string BaseUrl = "https://hacker-news.firebaseio.com/v0";
     private readonly IHttpClientFactory _clientFactory;
     private readonly IMemoryCache _cache;
 

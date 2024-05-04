@@ -32,11 +32,6 @@ internal class HackerNewsService : IHackerNewsService
 
     private async Task<HackerNewsItem> GetItemAsync(int id)
     {
-        if (_cache.TryGetValue(id, out HackerNewsItem item))
-        {
-            return item;
-        }
-
         var client = _clientFactory.CreateClient();
         var url = $"{BaseUrl}/item/{id}.json";
         var response = await client.GetAsync(url);
@@ -44,8 +39,7 @@ internal class HackerNewsService : IHackerNewsService
         response.EnsureSuccessStatusCode();
 
         var json = await response.Content.ReadAsStringAsync();
-        item = JsonSerializer.Deserialize<HackerNewsItem>(json)!;
-        return item;
+        return JsonSerializer.Deserialize<HackerNewsItem>(json)!;
     }
 
     public async Task<IEnumerable<HackerNewsItem>> GetTopStories()

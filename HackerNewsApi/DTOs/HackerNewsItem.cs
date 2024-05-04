@@ -2,23 +2,23 @@
 
 namespace HackerNewsApi.DTOs;
 
-public class HackerNewsItem
+public readonly struct HackerNewsItem
 {
     [JsonPropertyName("title")]
-    public string Title { get; set; }
+    public string Title { get; init; }
 
     [JsonPropertyName("url")]
-    public string Url { get; set; }
+    public string Url { get; init; }
 
     [JsonPropertyName("by")]
-    public string By { get; set; }
+    public string By { get; init; }
 
     [JsonPropertyName("time")]
-    public int Time { get; set; }
+    public int Time { get; init; }
 
     [JsonPropertyName("score")]
-    public int Score { get; set; }
+    public int Score { get; init; }
 
     [JsonPropertyName("descendants")]
-    public int CommentCount { get; set; }
+    public int CommentCount { get; init; }
 }

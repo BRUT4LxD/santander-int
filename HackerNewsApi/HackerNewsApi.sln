@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34310.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsApi", "HackerNewsApi.csproj", "{797F5589-152A-4554-BF00-8DF3F15B4703}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{797F5589-152A-4554-BF00-8DF3F15B4703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797F5589-152A-4554-BF00-8DF3F15B4703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797F5589-152A-4554-BF00-8DF3F15B4703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797F5589-152A-4554-BF00-8DF3F15B4703}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93FF7B09-EB09-432B-AAEF-2888BD165EEE}
+	EndGlobalSection
+EndGlobal

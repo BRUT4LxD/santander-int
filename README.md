@@ -15,6 +15,6 @@ To use HackerNewsApi in your project, follow these steps:
 ## Assumptions
 
 1. API caches responses for particular `N` for 1 minute.
-2. API fatches best stories every 1 minute and stores them in `MemoryCache`. To avoid throttling the HackerNews service there is a semaphore that limits the concurrent calls to HackerNews API.
+2. API fetches best stories every 1 minute and stores them in `MemoryCache`. To avoid throttling the HackerNews service there is a semaphore that limits the concurrent calls to HackerNews API.
 3. No sample integration with telemetry.
 4. No Swagger for one endpoint. 
